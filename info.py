@@ -68,7 +68,7 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'itsssSoMe1') # owner username wi
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/One_Picture_Perfect')
-CHNL_LNK = environ.get('CHNL_LNK', https://t.me/movieuploader')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movieuploader')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Panchayat_season_3_webserees')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'itsssSoMe1') # Support Chat Link Without https:// or @
 
@@ -77,7 +77,7 @@ AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', "False")), False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
