@@ -2,7 +2,7 @@
   <img src="https://graph.org/file/132e6aeba58845b266177.jpg"alt=Your-Bot Logo">
 </p>
 <h1 align="center">
-  YOUR BOT
+  YourBot
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Your+Bot!)
