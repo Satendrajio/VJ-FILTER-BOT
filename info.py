@@ -32,7 +32,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002165640128'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1477936637 6344043262').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002220078651 -1002215662728 -1002136558316 -1001943196163 -1001903984533 -1001933661992 -1002046689277 -1001951247170 -1001974758661 -1001938178416 -1001855834749 -1001807774643 -1002177546858 -1002209622079').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002220078651 -1002215662728 -1002136558316 -1001943196163 -1001903984533 -1001933661992 -1002046689277 -1001951247170 -1001974758661 -1001938178416 -1001855834749 -1001807774643 -1002177546858').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -48,7 +48,7 @@ reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002215662728 -1002220078651 -1002136558316 -1001943196163 -1001903984533 -1001933661992 -1002046689277 -1001951247170 -1001974758661 -1001938178416 -1001855834749 -1001807774643 -1002177546858 -1002209622079')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002215662728 -1002220078651 -1002136558316 -1001943196163 -1001903984533 -1001933661992 -1002046689277 -1001951247170 -1001974758661 -1001938178416 -1001855834749 -1001807774643 -1002177546858')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
@@ -92,7 +92,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'ziplinker.net')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '76212ca70f555b89c8845b29db243f4e588590f9')
